@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <!--this is to make the website responsive-->
+        <title>Transforming the Instructional Language</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    </head>
+
+    <body>
+        <section class="header2">
+            <nav>
+                <div class=col>
+                    <div class="logo">
+                        <a href="index.html"><img
+                                src="images/Logos/University of Toronto Logos/U of T Signature_Reverse RGB (1).png"></a>
+                        <h3>Transforming the Instructional Landscape</h3>
+                        <p>uoft.me/til</p>
+                    </div>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">TIL Story</a></li>
+                        <li><a href="initiatives.html">Projects</a></li>
+                        <li><a href="classroom.html">Classroom Redesign</a></li>
+                        <li><a href="news.html">News and Reports</a></li>
+                        <li><a href="til-advisory.html">TIL Advisory</a></li>
+                        <li><a href="contact.html" class="button-header">
+                                <div class="button-font">
+                                    Contact Us
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </section>
+    </body>
+
+    <!--News-->
+    <section class="reportpage">
+        <div class="classroom">
+            <h3>News and Reports</h3>
+            <p>Things move quickly at TIL. There is always something on the go and something new on the horizon. Keep up to date on our latest activities through our news column.</p>
+        </div>
+    </section>
+
+    <!--Report-->
+    <section class="report">
+        <div class="row3">
+            <div class="news-col">
+                <div class="report-col">
+                    <img src="images/Visuals/Progress.png">
+                    <div class="title-text">
+                        <h3>All About The TIL Operations Working Group</h3>
+                    </div>
+                    <p>Transforming the Instructional Landscape (TIL) is an ongoing project at the University of Toronto that examines how
+                    learning environments can be improved for both instructors and students. TIL employs design thinking to help build
+                    better learning environments with students rather than for students. A wide range of professionals from across UofT are
+                    also involved in the project’s exciting and innovative work.</p>
+                    <a href="" class="button-news">
+                        <h3>Continue Reading ></h3>
+                    </a>
+                </div>
+                <a href="" class="button4">
+                    <div class="row4">
+                        <img src="images/Project/majesticons_file-report-line.svg">
+                        <h3>Report Repository ></h3>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="news-col">
+                <div class="subnews-col">
+                    <div class="row5">
+                        <img src="images/Project/dashicons_welcome-write-blog.svg">
+                        <div class="vertical-line"></div>
+                        <div class="row2">
+                            <div class="text-news">
+                                <h3>A New Vision for TIL</h3>
+                                <p>Since it was established in 2017, the Transforming the Instructional Landscape (TIL) project has renovated an impressive 93 classrooms to date.</p>
+                            </div>
+                            <img src="images/News/keyboard_arrow_right.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="subnews-col">
+                    <div class="row5">
+                        <img src="images/Project/dashicons_welcome-write-blog-2.svg">
+                        <div class="vertical-line"></div>
+                        <div class="row2">
+                            <div class="text-news">
+                                <h3>What Does Trust Look Like in Online Spaces?</h3>
+                                <p>As the UofT community continues to navigate the transition to online learning, maintaining bonds of trust amongst
+                                    instructors, staff, and students has become increasingly important.</p>
+                            </div>
+                            <img src="images/News/keyboard_arrow_right.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="subnews-col">
+                    <div class="row5">
+                        <img src="images/Project/dashicons_welcome-write-blog-3.svg">
+                        <div class="vertical-line"></div>
+                        <div class="row2">
+                            <div class="text-news">
+                                <h3>Transforming The Instructional Landscape</h3>
+                                <p>For the past four years, the Innovation Hub has teamed up with the Learning Space Management (LSM) Team to examine how learning environments can be improved for both instructors and students.</p>
+                            </div>
+                            <img src="images/News/keyboard_arrow_right.svg">
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="button4">
+                    <div class="row4">
+                        <img src="images/Project/bx_bx-news.svg">
+                        <h3>See All News and Blog Posts ></h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <section class="cta">
+        <img src="images/Icons/question.png">
+        <div class="contact">
+            <p>Looking to get in touch with TIL? We’d love to hear from you!</p>
+            <a href="">CONTACT US ></a>
+        </div>
+    </section>
+    
+    <!--Institutes-->
+    <section class="institutes">
+        <img src="images/Home/Group 62.svg">
+    </section>
+    
+    <!--JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() { navlinks.style.right = "0"; }
+        function hideMenu() { navlinks.style.right = "-200"; }
+    </script>
+</html>
