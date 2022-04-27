@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="575" height="104" viewBox="0 0 575 104">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 100px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+        font-family: Arial;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-size: 37.5px;
+      }
+    </style>
+  </defs>
+  <text id="LSM" class="cls-1" x="20.334" y="88.221">LSM</text>
+  <text id="Learning_Space_Management" data-name="Learning Space Management" class="cls-2" x="246.03" y="41.761">Learning Space<tspan x="246.03" dy="45">Management</tspan></text>
+</svg>

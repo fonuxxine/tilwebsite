@@ -3,7 +3,12 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-
+.news-link {
+  text-decoration: underline;
+  color: #012a5d;
+  -webkit-text-decoration-color: #012a5d;
+  text-decoration-color: #012a5d;
+}
 .header {
   min-height: 100vh;
   width: 100%;
@@ -211,6 +216,13 @@ p {
   margin-right: 20px;
   margin-left: 20px;
 }
+.row6 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 40px;
+  margin-left: 40px;
+  padding-bottom: 200px;
+}
 .front-col {
   flex-basis: 44%;
   margin-bottom: 5%;
@@ -219,6 +231,18 @@ p {
   border-radius: 30px;
   background-color: #fff;
   padding: 25px;
+  box-shadow: 5px 5px 20px rgba(92, 91, 91, 0.2);
+  cursor: pointer;
+  display: flex;
+}
+.front-col3 {
+  flex-basis: 30%;
+  margin-bottom: 5%;
+  text-align: center;
+  border: 7px solid #c9c9c9;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 0px 0px 0px 0px;
   box-shadow: 5px 5px 20px rgba(92, 91, 91, 0.2);
   cursor: pointer;
   display: flex;
@@ -249,7 +273,7 @@ p {
 }
 
 .what-why img{
-  width: 200px;
+  width: 100px;
   margin-right: 50px;
   display: flex;
   justify-content: center;
@@ -257,17 +281,22 @@ p {
 }
 
 .what-why2 img {
-  height: 200px;
+  width: 130px;
+  margin-top: 50px;
   margin-right: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 30px;
 }
 
 .what-text{
   text-align: left;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.what-text2 {
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .course img {
@@ -361,6 +390,7 @@ h3 {
 .til-col img {
   width: 50%;
   border-radius: 10px;
+  padding-bottom: 5%;
 }
 .about-col {
   flex-basis: 32%;
@@ -595,7 +625,22 @@ h3 {
   margin: 5px;
   background: transparent;
   padding: 5px;
+  position: relative;
 }
+.hide-col {
+  flex-basis: 32%;
+  border: 7px solid #c9c9c9;
+  border-radius: 30px;
+  margin: 10px;
+  position: absolute;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 5px 5px 20px rgba(92, 91, 91, 0.2);
+}
+.hide-col p{
+  text-align: left;
+}
+
 .design-col img {
   height: 100px;
   object-fit: contain;
@@ -860,7 +905,7 @@ h3 {
   position: relative;
   overflow: hidden;
   box-shadow: 2px 2px 10px rgba(92, 91, 91, 0.2);
-  background-image: linear-gradient(#f2f2f2, #f2f2f2);
+  background-image: #fff;
 }
 
 /* Contact us*/
@@ -1018,6 +1063,11 @@ h3 {
   width: 100%;
 }
 
+.resize_image img{
+  border-radius: 0px;
+  width: 70%;
+}
+
 .timeline__component--bg {
   padding: 2em;
   background: #fff;
@@ -1079,3 +1129,111 @@ h3 {
 .timeline__paragraph {
   line-height: 1.5;
 }
+
+/* tooltip */
+.final__tooltip {
+    position: relative;
+    height: 60px;
+    width: 250px;
+    text-align: center;
+    margin: auto auto;
+}
+  .final__tooltip:before {
+    position: absolute;
+    z-index: 1;
+    left: 70%;
+    top: -20%;
+    display: none;
+    width: 200px;
+    height: fit-content;
+    padding: 10px 20px;
+    padding-top: 65px;
+    overflow: hidden;
+    font-size: 0.8em;
+    line-height: 1.4;
+    text-align: left;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #012a5d;
+    content: attr(des);
+  }
+  .final__tooltip:after {
+    position: absolute;
+    z-index: 2;
+    left: 70%;
+    top: -20%;
+    display: none;
+    width: 200px;
+    height: fit-content;
+    font-size: 0.8em;
+    font-weight: 500;
+    padding: 10px 20px;
+    color: #012a5d;
+    border-bottom: 1px solid #d0d0d0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #ecf0f1;
+    content: attr(title);
+  }
+   .final__tooltip:hover:before,
+   .final__tooltip:hover:after {
+     display: inline-block;
+   }
+
+
+   .final__tooltip.top:before {
+     bottom: calc(100% + 5px);
+     left: 50%;
+
+     /* Why use transform vs. position? There's a great article on that here: https://medium.com/@ArthurFinkler/css-animations-translate-vs-absolute-positioning-and-background-position-dd39fbdeade5 */
+     transform: translateX(-50%);
+   }
+   .final__tooltip.top:after {
+     bottom: 100%;
+     left: 50%;
+     transform: translateX(-50%);
+     border-bottom-width: 0;
+     border-top-color: rgba(0, 0, 0, 0.8);
+   }
+
+
+   .final__tooltip.bottom:before {
+     top: calc(100% + 5px);
+     left: 50%;
+     transform: translateX(-50%);
+   }
+   .final__tooltip.bottom:after {
+     top: 100%;
+     left: 50%;
+     transform: translateX(-50%);
+     border-top-width: 0;
+     border-bottom-color: rgba(0, 0, 0, 0.8);
+   }
+
+
+   .final__tooltip.left:before {
+     top: 50%;
+     right: calc(100% + 5px);
+     transform: translateY(-50%);
+   }
+   .final__tooltip.left:after {
+     top: 50%;
+     right: 100%;
+     transform: translateY(-50%);
+     border-right-width: 0;
+     border-left-color: rgba(0, 0, 0, 0.8);
+   }
+
+
+   .final__tooltip.right:before {
+     top: 50%;
+     left: calc(100% + 5px);
+     transform: translateY(-50%);
+   }
+   .final__tooltip.right:after {
+     top: 50%;
+     left: 100%;
+     transform: translateY(-50%);
+     border-left-width: 0;
+     border-right-color: rgba(0, 0, 0, 0.8);
+   }

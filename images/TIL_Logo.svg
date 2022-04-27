@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="625" height="104" viewBox="0 0 625 104">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 100px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+        font-family: Arial;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-size: 37.5px;
+      }
+    </style>
+  </defs>
+  <text id="TIL" class="cls-1" x="5.334" y="88.221">TIL</text>
+  <text id="Transforming_the_Informational_Landscape" data-name="Transforming the  Informational Landscape" class="cls-2" x="172.679" y="40.761">Transforming the <tspan x="172.679" dy="45">Informational Landscape</tspan></text>
+</svg>
