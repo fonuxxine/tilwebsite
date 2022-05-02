@@ -1113,14 +1113,9 @@ h3 {
 }
 
 .timeline__component img{
-  border-radius: 10px;
+  border-radius: 20px;
   margin-top: 20px;
   width: 100%;
-}
-
-.resize_image img{
-  border-radius: 0px;
-  width: 70%;
 }
 
 .timeline__component--bg {
