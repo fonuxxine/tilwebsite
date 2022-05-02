@@ -192,6 +192,11 @@ nav .fa {
 }
 
 /*institutes*/
+.resize-image img{
+  margin: auto;
+  padding: 50px 0px;
+  height: 60px;
+}
 .h1 {
   font-size: 36px;
   font-weight: 600;
@@ -692,9 +697,7 @@ h3 {
   margin-bottom: 100px;
   position: relative;
   overflow: hidden;
-  padding-top: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 30px 50px;
   box-shadow: 5px 5px 20px rgba(92, 91, 91, 0.2);
 }
 .initiativespage-col img {
@@ -707,9 +710,6 @@ h3 {
   text-decoration: none;
   font-weight: 500;
   font-size: 15px;
-}
-.initiativespage-col p{
-  height: 300px;
 }
 .arrow img {
   width: 20%;
@@ -930,6 +930,10 @@ h3 {
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
+}
+.news-col h3 {
+  color: #012a5d;
+  margin-bottom: 30px;
 }
 .subnews-col {
   border: 7px solid #c9c9c9;
