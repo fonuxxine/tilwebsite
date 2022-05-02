@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta name="description" content="Transforming the Instructional Landscape, ACE, University of Toronto">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+
+  <title>TIL Advisory Committee</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/index.css" type="text/css">
+  <link rel="stylesheet" href="css/advisorycommittee.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/animate_on_scroll.js"></script>
+</head>
+
+<body>
+  <script>
+    // cards animation
+    setTimeout(function() {
+      new AnimateOnScroll({
+        elements: document.getElementsByClassName('landing-card'),
+        animation: 'rotate-in 0.5s ease-out',
+        gap: 100,
+        chainAnimation: true
+      });
+    }, 10);
+
+  </script>
+
+  <div id="container">
+    <div class="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <div width="18px" id='image'>
+            <a href="https://www.utoronto.ca/">
+              <img id="uoft_logo" src="images/UofT_Logo.svg" alt="U of T Logo" />
+            </a>
+            <div style="height: 50px; border-left: 1px solid white"></div>
+            <a href="../index.html"><img id="ace_logo" src="images/ACE_Logo.svg" alt="ACE Logo" /></a>
+            <div style="height: 50px; border-left: 1px solid white"></div>
+            <a href="index.html"><img id="til_logo" src="images/TIL_Logo.svg" alt="TIL Logo" /></a>
+          </div>
+        </div>
+        <nav>
+          <div class="nav-mobile"><a id="nav-toggle"><span></span></a></div>
+          <ul class="nav-list">
+            <li>
+              <a href="advisorycommittee.html" class="active">
+                 <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">people</i>
+                TIL Advisory Committee
+              </a>
+            </li>
+            <li>
+              <a href="documents/TILReport.pdf" target="_blank">
+                 <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">menu_book</i>
+                TIL Report
+              </a>
+            </li>
+            <li>
+              <a href="LSRS.html">
+                 <i class="material-icons" style="font-size: 26px; position: relative; top: 6px;">star_half</i>
+                LSRS
+              </a>
+            </li>
+            <li>
+              <a href="news.html">
+                <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">list_alt</i>
+                News
+              </a>
+            </li>
+            <li class="dropdown-li">
+              <a href="mandate.html">
+                <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">description</i>
+                Mandate
+              </a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="design_principles.html">Design Principles</a>
+                </li>
+                <li>
+                  <a href="human-centred_design.html">Human-Centred Design</a>
+                </li>
+                <li>
+                  <a href="pedagogy.html">Pedagogy</a>
+                </li>
+                <li>
+                  <a href="instructional_technology.html">Instructional Technology</a>
+                </li>
+                <li>
+                  <a href="accessibility.html">Accessibility</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="progress.html">
+                <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">update</i>
+                Progress
+              </a>
+            </li>
+
+            <li>
+              <a href="../webapp/f?p=118">
+                <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">feedback</i>
+                Feedback
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div id="main">
+
+        <section id="top">
+          <h1>TIL Advisory Committee</h1>
+          <div class="cards-container">
+            <a href="#terms_of_reference" class="landing-card">
+              <i class="material-icons" style="font-size: 100px;">book</i>
+              <!-- <img src="images/design_principles_logo.png" alt="Design Principles logo" /> -->
+              <h2>Terms of Reference</h2>
+              <div class="line"></div>
+            </a>
+            <a href="#membership_list" class="landing-card">
+              <i class="material-icons" style="font-size: 100px;">group</i>
+              <!-- <img src="images/enhancing_logo.png" alt="human-centred design logo" /> -->
+              <h2>Membership<br>List</h2>
+              <div class="line"></div>
+            </a>
+
+            <a href="#agenda" class="landing-card">
+              <i class="material-icons" style="font-size: 100px;">view_agenda</i>
+              <!-- <img src="images/emerging_logo.png" alt="pedagogy logo" /> -->
+              <h2>Meeting Agenda and Materials</h2>
+              <div class="line"></div>
+            </a>
+
+            <a href="#schedule" class="landing-card">
+              <i class="material-icons" style="font-size: 100px;">today</i>
+              <!-- <img src="images/expanding_logo.png" alt="A/V logo" /> -->
+              <h2>Schedule</h2>
+              <div class="line"></div>
+            </a>
+
+          </div>
+        </section>
+
+
+        <section id="terms_of_reference">
+          <h2>Terms of Reference</h2>
+          <p>
+            With quality teaching as one of the University's core missions,
+            instructional space plays a crucial role in fulfilling this aim. As
+            a steward of these important facilities, Academic + Campus Events
+            (ACE) is committed to developing accessible, innovative, and
+            effective purpose-built classrooms that support the needs of all
+            stakeholders.
+          </p>
+
+          <p>
+            The <strong>Transforming the Instructional Landscape (TIL)</strong> project seeks to
+            redesign 174 classrooms in 23 buildings across the St George Campus,
+            totaling an area of 15,700 NASM. A project of this scope ill impact
+            almost 6,000 courses, and potentially enhance the experience of
+            almost every student and instructor on campus.
+          </p>
+
+          <p>
+            As our aim is to redesign classrooms <em>with</em> rather than <em>for</em> our user
+            groups, direct engagement with instructors and students is key to
+            this initiative's success. Through feedback and observations
+            gathered from the user groups, we can produce a plan that meets our
+            users' needs. Partnering with CTSI and the Innovation Hub, employing
+            Design Thinking Principles, and applying intelligent and responsive
+            design practices, this project aims to transform instructional space
+            within the classroom and throughout the broader Campus community.
+          </p>
+
+          <p>
+            The advisory committee will provide guidance to these conversations
+            to ensure that the overall goals of the University's teaching
+            mission, along with the goals of local divisions and departments,
+            are achieved.
+          </p>
+          In order to be successful, the mandate of the advisory committee will be:
+          <ol>
+            <li>
+              To define the pedagogical relevancy of the TIL project.
+            </li>
+            <li>
+              To provide oversight related to the pedagogical goals of TIL.
+            </li>
+            <li>
+              To ensure that the funds are directed to provide maximum impact
+              to the teaching community.
+            </li>
+            <li>
+              To provide advice to ACE related to pedagogical trends and
+              emerging teaching practise.
+            </li>
+            <li>
+              To ensure alignment with divisional teaching strategies as they
+              pertain the University's Shared Classrooms.
+            </li>
+
+
+          </ol>
+          <a href="#top">Back to top</a>
+        </section>
+
+        <section id="membership_list">
+          <h2>Membership List</h2>
+
+          <div class="list-container">
+            <table class="list-card">
+              <tr>
+                <td width="40%"><strong>Keith Adamson</strong></td>
+                <td width="60%">Professor, Faculty of Social Work</td>
+              </tr>
+              <tr>
+                <td><strong>Steven Bailey</strong></td>
+                <td>Director, ACE</td>
+              </tr>
+              <tr>
+                <td><strong>Sandra Bjelajac-Mejia</strong></td>
+                <td>Acting Director of Professional Programs, Faculty of Pharmacy</td>
+              </tr>
+              <tr>
+                <td><strong>Alana Boland</strong></td>
+                <td>Associate Dean, Teaching and Learning, Faculty of Arts and Science</td>
+              </tr>
+              <tr>
+                <td><strong>Kristine Collins</strong></td>
+                <td>Director, Academic Programs, School of Continuing Studies</td>
+              </tr>
+
+            </table>
+            <table class="list-card">
+              <tr>
+                <td width="40%"><strong>Tom Coyle</strong></td>
+                <td width="60%">Vice-Dean, Undergraduate, Faculty of Applied Science & Engineering</td>
+              </tr>
+              <tr>
+                <td><strong>Greg Evans</strong></td>
+                <td>Professor, Faculty of Applied Science & Engineering</td>
+              </tr>
+              <tr>
+                <td><strong>Michelle French</strong></td>
+                <td>Special Adviser to the Dean on Undergraduate Education, Faculty of Medicine</td>
+              </tr>
+              <tr>
+                <td><strong>Clare Gilderdale</strong></td>
+                <td>Special Projects Officer, VPIUE</td>
+              </tr>
+              <tr>
+                <td><strong>David Goldreich</strong></td>
+                <td>Professor, Rotman School of Management</td>
+              </tr>
+
+            </table>
+            <table class="list-card">
+              <tr>
+                <td width="40%"><strong>Patrick Hopewell</strong></td>
+                <td width="60%">Director, Enterprise Infrastructure Solutions, ITS</td>
+              </tr>
+              <tr>
+                <td><strong>Avi Hyman</strong></td>
+                <td>Director, ACT</td>
+              </tr>
+              <tr>
+                <td><strong>Laura Miller</strong></td>
+                <td>Associate Professor, Faculty of Architecture and Landscape Design</td>
+              </tr>
+              <tr>
+                <td><strong>Susan McCahan</strong></td>
+                <td>Chair</td>
+              </tr>
+              <tr>
+                <td><strong>Steven Penfold</strong></td>
+                <td>Graduate Department of History</td>
+              </tr>
+
+            </table>
+            <table class="list-card">
+              <tr>
+                <td width="40%"><strong>Carol Rolheiser</strong></td>
+                <td width="60%">Director, CTSI</td>
+              </tr>
+              <tr>
+                <td><strong>Jim Slotta</strong></td>
+                <td>Professor, OISE</td>
+              </tr>
+              <tr>
+                <td><strong>Olivier St.Cyr</strong></td>
+                <td>Assistant Professor, Teaching Stream, Faculty of Information</td>
+              </tr>
+              <tr>
+                <td><strong>Ashley Stirling</strong></td>
+                <td>Vice-Dean, Academic Affairs, Faculty of Kinesiology & Physical Education</td>
+              </tr>
+
+              <tr>
+                <td><strong>Ann Touragenau</strong></td>
+                <td>Lawrences S. Bloomberg Faculty of Nursing</td>
+              </tr>
+            </table>
+          </div>
+          <a href="#top">Back to top</a>
+        </section>
+
+        <!-- Meeting Agenda & Materials -->
+        <section id="agenda">
+          <h2>Meeting Agenda & Materials</h2>
+            <ul>
+              <li>
+                May 30th 2019 - <a target="_blank" href="documents/TIL-Agenda-May2019.pdf">Meeting Agenda</a>
+                - <a target="_blank" href="documents/TIL-Advisory-Commitee-May-2019.pdf">Presentation Slides</a>
+                - <a target="_blank" href="documents/TIL-CTSI-Assessment-Handout-(June 2019 FINALCR).pdf">TIL CTSI Handout June 2019</a>
+                - <a target="_blank" href="https://www.youtube.com/watch?v=J4yApagnr0s">Portal to Media Literacy Video</a>
+              </li>
+              <li>
+                May 30th 2019
+                - <a target="_blank" href="documents/TIL-Agenda-May2019.pdf">Meeting Agenda</a>
+                - <a target="_blank" href="documents/TIL-Advisory-Commitee-May-2019.pdf">Presentation Slides</a>
+                - <a target="_blank" href="documents/TIL-CTSI-Assessment-Handout-(June 2019 FINALCR).pdf">TIL CTSI Handout June 2019</a>
+                - <a target="_blank" href="https://www.youtube.com/watch?v=J4yApagnr0s">Portal to Media Literacy Video</a>
+              </li>
+              <!-- Template for New Content -->
+              <!-- <li>
+                May 30th 2019
+                - <a target="_blank" href="documents/TIL-Agenda-May2019.pdf">Meeting Agenda</a>
+                - <a target="_blank" href="documents/TIL-Advisory-Commitee-May-2019.pdf">Presentation Slides</a>
+                - <a target="_blank" href="documents/TIL-CTSI-Assessment-Handout-(June 2019 FINALCR).pdf">TIL CTSI Handout June 2019</a>
+                - <a target="_blank" href="https://www.youtube.com/watch?v=J4yApagnr0s">Portal to Media Literacy Video</a>
+              </li> -->
+            </ul>
+          <a href="#top">Back to top</a>
+        </section>
+
+        <section id="schedule">
+          <h2>Meeting Schedule</h2>
+
+          <h3>2019-2020 Meetings</h3>
+          <ul>
+            <li>May 30th 2019 2:30pm-4:00pm</li>
+            <li>Oct 29th 2019 1:00pm-2:30pm</li>
+            <li>Feb 2020 TBA</li>
+          </ul>
+
+          <!-- <h3>2020-2021 Meetings</h3>
+          <ul>
+            <li>May 30th 2019 2:30pm-4:00pm</li>
+            <li>Oct 29th 2019 1:00pm-2:30pm</li>
+            <li>Feb 2020 TBA</li>
+          </ul> -->
+
+          <!-- Template for new content -->
+          <!-- <h3>2019-2020 Meetings</h3>
+          <ul>
+            <li>May 30th 2019 2:30pm-4:00pm</li>
+            <li>Oct 29th 2019 1:00pm-2:30pm</li>
+            <li>Feb 2020 TBA</li>
+          </ul> -->
+          <a href="#top">Back to top</a>
+        </section>
+
+      </div>
+    </div>
+  </div>
+  <!--- foooter ------>
+  <footer>
+    <nav>
+      <ul id="footer_items">
+        <li>
+          <a href="../index.html">
+            <div style="display: flex; flex-direction: column">
+              <p style="margin: 0">ACE Website</p>
+              <p style="margin: 0">Academic + Campus Events</p>
+            </div>
+          </a>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
+</html>

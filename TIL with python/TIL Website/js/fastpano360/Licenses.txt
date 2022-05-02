@@ -1,0 +1,45 @@
+//=============================================
+// Fonts
+//=============================================
+Font Awesome
+SIL OFL 1.1, MIT License, CC BY 3.0
+http://fortawesome.github.io/Font-Awesome/license/
+
+//=============================================
+// Sources
+//=============================================
+jQuery
+MIT License
+https://jquery.com/
+
+Angular
+MIT License
+https://github.com/angular/angular.js
+
+CodeIgniter
+MIT License
+https://www.codeigniter.com/userguide3/license.html
+
+angular-growl-v2
+MIT License
+http://janstevens.github.io/angular-growl-2
+
+ng-file-upload
+MIT License
+https://github.com/danialfarid/ng-file-upload
+
+FeatherLight
+MIT License
+https://github.com/noelboss/featherlight/
+
+jssocials
+MIT License
+https://github.com/tabalinas/jssocials
+
+LightSlider
+MIT License
+https://github.com/sachinchoolur/lightslider
+
+ToolTipster
+MIT License
+https://github.com/iamceege/tooltipster

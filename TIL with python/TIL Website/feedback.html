@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta name="description" content="Transforming the Instructional Landscape, ACE, University of Toronto">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+
+  <title>Classroom Feedback</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/index.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/rooms_data.js"></script>
+  <script src="js/autocomplete.js"></script>
+  <script src="js/button_toggle.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <section class="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <div width="18px" id='image'>
+            <a href="https://www.utoronto.ca/">
+              <img id="uoft_logo" src="images/UofT_Logo.svg" alt="U of T Logo" />
+            </a>
+            <div style="height: 50px; border-left: 1px solid white"></div>
+            <a href="../index.html"><img id="ace_logo" src="images/ACE_Logo.svg" alt="ACE Logo" /></a>
+            <div style="height: 50px; border-left: 1px solid white"></div>
+            <a href="index.html"><img id="til_logo" src="images/TIL_Logo.svg" alt="TIL Logo" /></a>
+          </div>
+        </div>
+        <nav>
+          <div class="nav-mobile"><a id="nav-toggle"><span></span></a></div>
+          <ul class="nav-list">
+            <li>
+              <a href="advisorycommittee.html">
+                 <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">people</i>
+                TIL Advisory Committee
+              </a>
+            </li>
+            <li>
+              <a href="documents/TILReport.pdf" target="_blank">
+                 <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">menu_book</i>
+                TIL Report
+              </a>
+            </li>
+            <li>
+              <a href="LSRS.html">
+                 <i class="material-icons" style="font-size: 26px; position: relative; top: 6px;">star_half</i>
+                LSRS
+              </a>
+            </li>
+            <li>
+              <a href="news.html">
+                <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">list_alt</i>
+                News
+              </a>
+            </li>
+            <li class="dropdown-li">
+              <a href="mandate.html">
+                <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">description</i>
+                Mandate
+              </a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="design_principles.html">Design Principles</a>
+                </li>
+                <li>
+                  <a href="human-centred_design.html">Human-Centred Design</a>
+                </li>
+                <li>
+                  <a href="pedagogy.html">Pedagogy</a>
+                </li>
+                <li>
+                  <a href="instructional_technology.html">Instructional Technology</a>
+                </li>
+                <li>
+                  <a href="accessibility.html">Accessibility</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="progress.html">
+                <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">update</i>
+                Progress
+              </a>
+            </li>
+
+            <li>
+              <a href="../webapp/f?p=118">
+                <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">feedback</i>
+                Feedback
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <h1>Classroom Feedback</h1>
+    <div class="wrapper">
+      <div id="main">
+        <p>To report a problem about a classroom, please use the <a href="../../../comments" class="link">problem
+            box</a>.</p>
+        <form method="post" name="form" id="form" autocomplete="off">
+          <span class="asterisk">* </span>Select classroom:<br><input type="text" name="classroom"
+            id="classroom" class="required" placeholder="Please use this format: BA290">
+          <div class="name-email">
+            <div class="fullname">
+              <div><span class="asterisk">* </span>Full Name:<br><input type="text" name="firstname"
+                  class="required" placeholder="First Name" autofocus></div>
+              <div><br><input type="text" name="lastname" class="required" placeholder="Last Name"></div>
+            </div>
+            <br>
+            <div><span class="asterisk">* </span>Email:<br><input type="text" name="email" class="required"
+                placeholder="Enter a valid email address"></div>
+          </div>
+          <span class="asterisk">* </span>Role:<br>
+          <select id="identification" onchange="
+          if (this.value == 'other') {
+            var textField = document.createElement('INPUT');
+            textField.type = 'text';
+            textField.placeholder = 'Please specify';
+            textField.className = 'required';
+            textField.id = 'other';
+            textField.name = 'other';
+            $(textField).insertAfter($('#identification'));
+          } else {
+            if ($('#other') != null) {
+              $('#other').remove();
+            }
+          }
+          ">
+            <option value="student">Student</option>
+            <option value="faculty">Faculty</option>
+            <option value="staff">Staff</option>
+            <option value="other">Other</option>
+          </select>
+
+          <!-------------------------------- ENVIRONMENT SECTION -------------------------------->
+          <section class="form-section" id="environment">
+            Please provide feedback about the classroom environment (i.e. classroom layout,
+            furniture, colours, lighting,
+            etc.)
+            <br>
+            <textarea rows="5" cols="50"></textarea>Please provide feedback about the classroom's
+            technology
+            (i.e. projector, TV screens, teaching station, etc.)<br>
+            <textarea rows="5" cols="50"></textarea>Please provide any other input or suggestions
+            that
+            you have to enhance your experience in this classroom.<br>
+            <textarea rows="5" cols="50"></textarea>
+          </section>
+          <label class="checkmark-container">I am willing to be contacted for project updates.
+            <input type="checkbox" value="subscribe">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkmark-container">I am willing to be contacted to discuss my feedback in
+            a more detailed interview in the future.
+            <input type="checkbox" value="interview">
+            <span class="checkmark"></span>
+          </label>
+          <br>
+          <div style="display: flex; justify-content: center; margin-bottom: 0;"><input type="submit"
+              name="submit" onclick="return confirm('Do you really want to submit the form?');"
+              value="Submit Feedback"></div>
+        </form>
+        <div class="contact" style="display: flex; justify-content: flex-end">
+          <p style="margin-right: 20px"><strong>Phone: </strong>(416) 978-2187</p>
+          <p><strong>Email: </strong><a href="mailto:classroom.ace@utoronto.ca">classroom.ace@utoronto.ca</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------- foooter ------------------------------------>
+  <footer id="footer">
+    <nav>
+      <ul id="footer_items">
+        <li>
+          <a href="../index.html">
+            <div style="display: flex; flex-direction: column">
+              <p style="margin: 0">ACE Website</p>
+              <p style="margin: 0">Academic + Campus Events</p>
+            </div>
+          </a>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script>
+    openForm('environment');
+
+    function openForm(name) {
+      var x = document.getElementsByClassName("form-section");
+      for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none ";
+      }
+      document.getElementById(name).style.display = "block ";
+    }
+
+  </script>
+  <script>
+    var rooms = [];
+
+    for (var building in roomsDict) {
+      for (var type in roomsDict[building]) {
+        for (var room in roomsDict[building][type]) {
+          rooms.push(building + room);
+        }
+      }
+    }
+    // initiate the autocomplete function on the "search-input " element, and pass along the rooms array as possible autocomplete values
+    autocomplete(document.getElementById('classroom'), rooms);
+
+  </script>
+</body>
+
+</html>

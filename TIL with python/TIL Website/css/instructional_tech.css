@@ -1,0 +1,22 @@
+.link-card img{
+  width: 120px;
+  border-radius: 50%;
+  border: 4px solid #a7a3a3;
+}
+
+.link-card {
+  width: 220px;
+  border: 1px solid #a7a3a3;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 5px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  text-align: center;
+  
+  transform-origin: top left;
+}

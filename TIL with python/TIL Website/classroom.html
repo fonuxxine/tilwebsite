@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="description" content="Transforming the Instructional Landscape, ACE, University of Toronto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <title>Classroom Redesign</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="../../classroom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/button_toggle.js"></script>
+    <script src="js/show_rooms.js"></script>
+    <script src="js/rooms_data.js"></script>
+    <script src="js/before_after.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/animate_on_scroll.js"></script>
+    <script src="js/autocomplete.js"></script>
+</head>
+
+<body>
+    <section class="header2">
+        <nav>
+            <div class=col>
+                <div class="logo">
+                    <a href="../../index.html"><img
+                            src="../../images/Logos/University of Toronto Logos/U of T Signature_Reverse RGB (1).png"></a>
+                    <h3>Transforming the Instructional Landscape</h3>
+                </div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../about.html">TIL Story</a></li>
+                    <li><a href="../../initiatives.html">Projects</a></li>
+                    <li><a href="../../TIL with python/TIL Website/classroom.html">Classroom Redesign</a></li>
+                    <li><a href="../../news.html">News and Reports</a></li>
+                    <li><a href="../../til-advisory.html">TIL Advisory</a></li>
+                    <li><a href="../../contact.html" class="button-header">
+                            <div class="button-font">
+                                Contact Us
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <section class="aboutpage">
+        <div class="classroom">
+            <h3>Classroom Redesign</h3>
+            <p>An overview of the classroom redesign process through the years.</p>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper">
+            <div id="main">
+                <section>
+                    <div id="scroll-anchor">
+                        <div class="search-box" id="search-box">
+                            <i class="material-icons search-icon" style="color: #CCC">search</i>
+                            <input type="text" class="search-input" placeholder="Search room (Ex. BA1130)"
+                                onchange="showSearchedCards(this.value)" oninput="showSearchedCards(this.value)"
+                                onfocus="document.removeEventListener('keyup', moveFocus)"
+                                onfocusout="if (current != null) {document.addEventListener('keyup', moveFocus);}">
+                        </div>
+                    </div>
+
+                    <p>Sort rooms by:</p>
+                    <div id="completed-ongoing-group" class="button-group">
+                        <button id="date_button" class="button-group-button default"><i
+                                class="material-icons">date_range</i><span>Date</span></button>
+                        <button id="building_button" class="button-group-button"><i
+                                class="material-icons">account_balance</i><span>Building</span></button>
+                    </div>
+                </section>
+                <section id="content">
+                    <section id="content">
+                        <div class="category-heading date"
+                            style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img
+                                src="images/building.svg" class="heading-image">
+                            <p>Pilot Project</p>
+                            <div class="stats pilot">33 Classrooms | 11 Buildings</div>
+                        </div>
+                        <div class="rooms"></div>
+                        <div class="category-heading date"
+                            style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img src="images/Summer.svg"
+                                class="heading-image">
+                            <p>Summer 2017</p>
+                            <div class="stats summer">9 Classrooms | 2 Buildings</div>
+                        </div>
+                        <div class="rooms"></div>
+                        <div class="category-heading date"
+                            style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img src="images/Summer.svg"
+                                class="heading-image">
+                            <p>Summer 2018</p>
+                            <div class="stats summer">5 Classrooms | 4 Buildings</div>
+                        </div>
+                        <div class="rooms"></div>
+                        <div class="category-heading date"
+                            style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img src="images/Fall.svg"
+                                class="heading-image">
+                            <p>Fall 2018</p>
+                            <div class="stats fall">12 Classrooms | 4 Buildings</div>
+                        </div>
+                        <div class="rooms"></div>
+                        <div class="category-heading date"
+                            style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img src="images/Winter.svg"
+                                class="heading-image">
+                            <p>Winter 2019</p>
+                            <div class="stats winter">12 Classrooms | 3 Buildings</div>
+                        </div>
+                        <div class="rooms"></div>
+                        <div class="category-heading date"
+                            style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img src="images/Summer.svg"
+                                class="heading-image">
+                            <p>Summer 2019</p>
+                            <div class="stats summer">28 Classrooms | 7 Buildings</div>
+                        </div>
+                        <div class="rooms"></div>
+                        <div class="category-heading date"
+                            style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img src="images/Fall.svg"
+                                class="heading-image">
+                            <p>Fall 2019</p>
+                            <div class="stats fall">2 Classrooms | 1 Buildings</div>
+                        </div>
+                        <div class="rooms"></div>
+                        <div class="category-heading date"
+                            style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img src="images/Winter.svg"
+                                class="heading-image">
+                            <p>Winter 2020</p>
+                            <div class="stats winter">11 Classrooms | 2 Buildings</div>
+                        </div>
+                        <div class="rooms"></div>
+                        <div class="category-heading date"
+                            style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img src="images/Summer.svg"
+                                class="heading-image">
+                            <p>Summer 2020</p>
+                            <div class="stats summer">40 Classrooms | 10 Buildings</div>
+                        </div>
+                        <div class="rooms"></div>
+                        <div class="category-heading date"
+                            style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img src="images/Fall.svg"
+                                class="heading-image">
+                            <p>Fall 2020</p>
+                            <div class="stats fall">7 Classrooms | 1 Buildings</div>
+                        </div>
+                        <div class="rooms"></div>
+                        <div class="category-heading date"
+                            style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img src="images/Winter.svg"
+                                class="heading-image">
+                            <p>Winter 2021</p>
+                            <div class="stats winter">6 Classrooms | 1 Buildings</div>
+                        </div>
+                        <div class="rooms"></div>
+                        <div class="category-heading date"
+                            style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img src="images/Summer.svg"
+                                class="heading-image">
+                            <p>Summer 2021</p>
+                            <div class="stats summer">29 Classrooms | 10 Buildings</div>
+                        </div>
+                        <div class="rooms"></div>
+                        <div class="category-heading date"
+                            style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img src="images/Fall.svg"
+                                class="heading-image">
+                            <p>Fall 2021</p>
+                            <div class="stats fall">4 Classrooms | 2 Buildings</div>
+                        </div>
+                        <div class="rooms"></div>
+                        <div class="category-heading date"
+                            style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img src="images/Winter.svg"
+                                class="heading-image">
+                            <p>Winter 2022</p>
+                            <div class="stats winter">4 Classrooms | 1 Buildings</div>
+                        </div>
+                        <div class="rooms"></div>
+                        <div class="category-heading date"
+                            style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img src="images/Summer.svg"
+                                class="heading-image">
+                            <p>Summer 2022</p>
+                            <div class="stats summer">6 Classrooms | 5 Buildings</div>
+                        </div>
+                        <div class="rooms"></div>
+                    </section>
+                </section>
+                <!-- <p>* Classroom count contains partially renovated rooms</p> -->
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <section class="cta">
+        <img src="../../images/Icons/question.png">
+        <div class="contact">
+            <p>Looking to get in touch with TIL? We’d love to hear from you!</p>
+            <a href="">CONTACT US ></a>
+        </div>
+    </section>
+    
+    <!--Institutes-->
+    <section class="institutes">
+        <img src="../../images/Home/Group 62.svg">
+    </section>
+
+    <script>
+        var $anchor = $("#scroll-anchor");
+        var $scroller = $('#search-box');
+        var $input = $('.search-input');
+        var navbarHeight = $('.navigation').outerHeight();
+
+        var move = function () {
+            var st = $(window).scrollTop();
+            var ot = $anchor.offset().top;
+            if (st > ot) {
+                $scroller.css({
+                    position: "fixed",
+                });
+                if ($('.navigation').hasClass('nav-down')) {
+                    $scroller.css({
+                        top: navbarHeight + "px"
+                    });
+                } else {
+                    $scroller.css({
+                        top: "0px"
+                    });
+                }
+                $scroller.addClass('sticky');
+                $input.addClass('sticky');
+            } else {
+
+                $scroller.css({
+                    position: "relative",
+                    top: ""
+                });
+                $scroller.removeClass('sticky');
+                $input.removeClass('sticky');
+            }
+        };
+        $(window).scroll(move);
+        move();
+
+    </script>
+    <div class="close-viewer-message">
+        Press 'Esc' or click 'X' to close this viewer
+    </div>
+</body>
+
+</html>

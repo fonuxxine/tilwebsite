@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="50px" viewBox="0 0 603 516" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>quotes</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="quotes" fill="#e1ebf6">
+            <g id="quote">
+                <rect id="Rectangle" x="0" y="254.366197" width="262" height="261.633803"></rect>
+                <path d="M0,261.633803 C0,117.137443 117.301396,0 262,0 L262,81.1966974 C162.207859,81.1966974 81.3103448,161.981141 81.3103448,261.633803 L4.26325641e-14,261.633803 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="quote" transform="translate(341.457831, 0.000000)">
+                <rect id="Rectangle" x="0" y="254.366197" width="262" height="261.633803"></rect>
+                <path d="M0,261.633803 C0,117.137443 117.301396,0 262,0 L262,81.1966974 C162.207859,81.1966974 81.3103448,161.981141 81.3103448,261.633803 L4.26325641e-14,261.633803 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

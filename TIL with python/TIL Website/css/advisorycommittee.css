@@ -1,0 +1,91 @@
+.wrapper {
+  padding: 0;
+}
+
+.cards-container {
+  /* justify-content: center; */
+}
+section {
+  margin: 2vh 0;
+  padding: 6vh 4vw;
+}
+
+h1 {
+  /* text-align: center; */
+  margin-bottom: 2vh;
+}
+h2 {
+  font-weight: bold;
+}
+h3{
+  font-weight: normal;
+}
+
+em {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+li>a {
+  text-decoration: underline;
+}
+li>a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2587D4;
+}
+
+li>a:focus {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2587D4;
+}
+
+section> a {
+  float: right;
+}
+
+section> a:hover, section>a:focus {
+  text-decoration: underline;
+}
+#main {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+
+.list-card {
+  flex: 1 1 20% !important; /*Creates 4 Columns*/
+}
+
+table {
+  margin-right: 2vw;
+  width: 20vw;
+}
+
+.vl{
+  border-right: 2px solid #C0C0C0;
+}
+
+td {
+  margin-right: 20px;
+  padding: 10px;
+  vertical-align: top;
+}
+#terms_of_reference{
+  background-color: #F3EEEE;
+}
+#membership_list{
+  background-color: white;
+}
+#agenda{
+  background-color: #F3EEEE;
+}
+#schedule{
+  background-color: white;
+}

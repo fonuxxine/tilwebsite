@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta name="description" content="Transforming the Instructional Landscape, ACE, University of Toronto">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+
+  <title>Human-Centred Design</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/index.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/animate_on_scroll.js"></script>
+  <script src="js/zoom_image.js"></script>
+</head>
+
+<body>
+  <script>
+    // for the comments section
+    setTimeout(function() {
+      new AnimateOnScroll({
+        elements: document.getElementById('callout-section'),
+        next: new Animate({
+          elements: document.getElementsByClassName('callout'),
+          animation: 'impact 1.0s',
+          gap: 600,
+          next: new Animate({
+            elements: document.getElementsByClassName('quotes-icon'),
+            gap: 500,
+            animation: 'boom 0.7s'
+          })
+        })
+      });
+    }, 10);
+
+  </script>
+  <div id="container">
+    <section class="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <div width="18px" id='image'>
+            <a href="https://www.utoronto.ca/">
+              <img id="uoft_logo" src="images/UofT_Logo.svg" alt="U of T Logo" />
+            </a>
+            <div style="height: 50px; border-left: 1px solid white"></div>
+            <a href="../index.html"><img id="ace_logo" src="images/ACE_Logo.svg" alt="ACE Logo" /></a>
+            <div style="height: 50px; border-left: 1px solid white"></div>
+            <a href="index.html"><img id="til_logo" src="images/TIL_Logo.svg" alt="TIL Logo" /></a>
+          </div>
+        </div>
+        <nav>
+          <div class="nav-mobile"><a id="nav-toggle"><span></span></a></div>
+          <ul class="nav-list">
+            <li>
+              <a href="advisorycommittee.html">
+                 <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">people</i>
+                TIL Advisory Committee
+              </a>
+            </li>
+            <li>
+              <a href="documents/TILReport.pdf" target="_blank">
+                 <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">menu_book</i>
+                TIL Report
+              </a>
+            </li>
+            <li>
+              <a href="LSRS.html">
+                 <i class="material-icons" style="font-size: 26px; position: relative; top: 6px;">star_half</i>
+                LSRS
+              </a>
+            </li>
+            <li>
+              <a href="news.html">
+                <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">list_alt</i>
+                News
+              </a>
+            </li>
+            <li class="dropdown-li">
+              <a href="mandate.html">
+                <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">description</i>
+                Mandate
+              </a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="design_principles.html">Design Principles</a>
+                </li>
+                <li>
+                  <a href="human-centred_design.html" class="active">Human-Centred Design</a>
+                </li>
+                <li>
+                  <a href="pedagogy.html">Pedagogy</a>
+                </li>
+                <li>
+                  <a href="instructional_technology.html">Instructional Technology</a>
+                </li>
+                <li>
+                  <a href="accessibility.html">Accessibility</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="progress.html">
+                <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">update</i>
+                Progress
+              </a>
+            </li>
+
+            <li>
+              <a href="../webapp/f?p=118">
+                <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">feedback</i>
+                Feedback
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <div class="background-container">
+      <div class="background user_feedback"></div>
+    </div>
+    <div class="wrapper">
+      <div id="main">
+        <h1>Human-Centred Design <span style="font-size: 22px">in collaboration with</span> <img
+            style="display: inline; height: 80px; margin-bottom: -4px;" src="images/innovation_hub_logo.png"
+            alt="Innovation hub logo"></h1>
+        <section>
+          <h2>Innovation Hub Partnership</h2>
+          <p>The Innovation Hub, situated within the Division of Student Life, is a student-led
+            initiative
+            that collaborates with the UofT community to support the development of innovative
+            strategies
+            for improving the student experience. They help partners in the university community
+            design
+            with rather than for students by deepening their understanding of user needs through
+            empathy-based
+            research.
+          </p>
+          <p>Given the large-scale impact of the Transforming the Instructional Landscape project,
+            the Innovation
+            Hub has partnered with ACE to develop an ongoing feedback process that centres the
+            voices
+            of students, staff, and faculty in the re-design initiative, and ensure that their
+            needs,
+            desires, and perspectives are at the core of the process. The Innovation Hub will
+            develop
+            and maintain open channels for user feedback and research, identify themes and insights
+            from
+            the data collected, and work with ACE to incorporate these insights into the design
+            process.
+            Through this collaboration, the feedback will be used to create classrooms that support
+            the
+            needs of users and enhance the teaching and learning experience.</p>
+          <p>Learn more about the Innovation Hub <a href="http://blogs.studentlife.utoronto.ca/innovationhub/"
+              target="_blank" class="link">here</a>, or contact us at <a href="mailto: innovationhub@utoronto.ca"
+              class="link">innovationhub@utoronto.ca</a></p>
+        </section>
+        <section>
+          <h2>Student Consultation</h2>
+          <p>As part of the project initiative for designing with users, Academic and Campus Events
+            and
+            the Innovation Hub will be facilitating a number of channels and events for gathering
+            student
+            feedback. The goal of this data collection is to address the following:
+          </p>
+          <p><strong>Key Question: </strong>How do we design learning spaces that address student
+            needs?</p>
+          <p><strong>Our Goal: </strong>To create spaces that are dynamic and accessible learning
+            spaces,
+            where students feel that the classroom not only fulfills needs, but also enhances the
+            learning
+            or teaching experience.</p>
+          <p><strong>Example: </strong>Preliminary student outreach has identified power as a
+            fundamental
+            element that would improve the experience in the classroom, enabling students to work
+            more
+            effectively, and stay connected throughout the day as they move around campus. These
+            renovations
+            will add power to more than 1,594 seats across the campus.</p>
+          <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap">
+            <img class="zoom-image" style="max-width: 48%; min-width: 450px" src="images/duplex.png"
+              alt="Duplex outlets for each pair of seats">
+            <img class="zoom-image" style="max-width: 48%; min-width: 450px" src="images/student_consultation.png"
+              alt="Poll of the most important feature in a classroom">
+          </div>
+        </section>
+        <section>
+          <h2>Faculty Consultation</h2>
+          <p>Faculty and course instructors are vital to fulfilling the potential of classrooms to
+            be supportive
+            learning environments that support various pedagogical styles. Faculty consultation is
+            important
+            for understanding these unique needs, and addressing the following:</p>
+          <p><strong>Key Question: </strong>What key elements of the classroom do you find useful,
+            engaging
+            or interesting, and which elements can be improved?</p>
+          <p><strong>Our Goal: </strong>To create purpose built instructional environments that
+            meet the
+            diverse needs of faculty across the St. George Campus.</p>
+          <p><strong>Example: </strong>Early research has illustrated that lecture-style classrooms
+            can
+            not support emerging pedagogical styles. Newly updated classrooms favour layouts and
+            furniture
+            that facilitate a variety of teaching styles, promoting in-class collaboration and
+            student
+            engagement. Instructional technology upgrades also support active learning.</p>
+        </section>
+        <section id="callout-section">
+          <h2 style="text-align: center">Comments</h2>
+          <div class="callout bottom-left">
+            <img class="quotes-icon" src="images/quotes.svg" alt="quotes icon">
+            <p class="quote">Thank you. I am very grateful for having been given the opportunity to
+              give feedback.</p>
+          </div>
+          <div class="callout bottom-right">
+            <img class="quotes-icon" src="images/quotes.svg" alt="quotes icon">
+            <p class="quote">These proposed changes look amazing. I am sure our faculty and
+              students will love the upgrade
+              to the classrooms. Thanks for all your hard work on this.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!------------------------------------------------- foooter ------------------------------------>
+  <footer id="footer">
+    <nav>
+      <ul id="footer_items">
+        <li>
+          <a href="../index.html">
+            <div style="display: flex; flex-direction: column">
+              <p style="margin: 0">ACE Website</p>
+              <p style="margin: 0">Academic + Campus Events</p>
+            </div>
+          </a>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
+</html>

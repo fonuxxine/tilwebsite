@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta name="description" content="Transforming the Instructional Landscape, ACE, University of Toronto">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+
+  <title>Progress</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/index.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/button_toggle.js"></script>
+  <script src="js/show_rooms.js"></script>
+  <script src="js/rooms_data.js"></script>
+  <script src="js/before_after.js"></script>
+  <script src="js/animate.js"></script>
+  <script src="js/animate_on_scroll.js"></script>
+  <script src="js/autocomplete.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <section class="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <div width="18px" id='image'>
+            <a href="https://www.utoronto.ca/">
+              <img id="uoft_logo" src="images/UofT_Logo.svg" alt="U of T Logo" />
+            </a>
+            <div style="height: 50px; border-left: 1px solid white"></div>
+            <a href="../index.html"><img id="ace_logo" src="images/ACE_Logo.svg" alt="ACE Logo" /></a>
+            <div style="height: 50px; border-left: 1px solid white"></div>
+            <a href="index.html"><img id="til_logo" src="images/TIL_Logo.svg" alt="TIL Logo" /></a>
+          </div>
+        </div>
+        <nav>
+          <div class="nav-mobile"><a id="nav-toggle"><span></span></a></div>
+          <ul class="nav-list">
+            <li>
+              <a href="advisorycommittee.html">
+                 <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">people</i>
+                TIL Advisory Committee
+              </a>
+            </li>
+            <li>
+              <a href="documents/TILReport.pdf" target="_blank">
+                 <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">menu_book</i>
+                TIL Report
+              </a>
+            </li>
+            <li>
+              <a href="LSRS.html">
+                 <i class="material-icons" style="font-size: 26px; position: relative; top: 6px;">star_half</i>
+                LSRS
+              </a>
+            </li>
+            <li>
+              <a href="news.html">
+                <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">list_alt</i>
+                News
+              </a>
+            </li>
+            <li class="dropdown-li">
+              <a href="mandate.html">
+                <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">description</i>
+                Mandate
+              </a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="design_principles.html">Design Principles</a>
+                </li>
+                <li>
+                  <a href="human-centred_design.html">Human-Centred Design</a>
+                </li>
+                <li>
+                  <a href="pedagogy.html">Pedagogy</a>
+                </li>
+                <li>
+                  <a href="instructional_technology.html">Instructional Technology</a>
+                </li>
+                <li>
+                  <a href="accessibility.html">Accessibility</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="progress.html" class="active">
+                <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">update</i>
+                Progress
+              </a>
+            </li>
+
+            <li>
+              <a href="../webapp/f?p=118">
+                <i class="material-icons" style="font-size: 24px; position: relative; top: 6px;">feedback</i>
+                Feedback
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <div class="wrapper">
+      <div id="main">
+        <h1>Progress</h1>
+        <section>
+          <div id="scroll-anchor">
+            <div class="search-box" id="search-box">
+              <i class="material-icons search-icon" style="color: #CCC">search</i>
+              <input type="text" class="search-input" placeholder="Search room (Ex. BA1130)"
+                onchange="showSearchedCards(this.value)" oninput="showSearchedCards(this.value)"
+                onfocus="document.removeEventListener('keyup', moveFocus)" onfocusout="if (current != null) {document.addEventListener('keyup', moveFocus);}">
+            </div>
+          </div>
+
+		  <h3>As a result of the impact of COVID-19, we are taking this opportunity to re-evaluate the needs and requirements for the TIL classroom renovations.  Correspondingly the time frames listed here are no longer realistic. We look forward to sharing the updated goals and time frames when they become available.		  </h3>
+		  
+          <p>Sort rooms by:</p>
+          <div id="completed-ongoing-group" class="button-group">
+            <button id="date_button" class="button-group-button default"><i class="material-icons">date_range</i><span>Date</span></button>
+            <button id="building_button" class="button-group-button"><i class="material-icons">account_balance</i><span>Building</span></button>
+          </div>
+        </section>
+        <section id="content">
+          <section id="content">
+            <div class="category-heading date" style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img
+                src="images/building.svg" class="heading-image">
+              <p>Pilot Project</p>
+              <div class="stats pilot">33 Classrooms | 11 Buildings</div>
+            </div>
+            <div class="rooms"></div>
+            <div class="category-heading date" style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img
+                src="images/Summer.svg" class="heading-image">
+              <p>Summer 2017</p>
+              <div class="stats summer">9 Classrooms | 2 Buildings</div>
+            </div>
+            <div class="rooms"></div>
+            <div class="category-heading date" style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img
+                src="images/Summer.svg" class="heading-image">
+              <p>Summer 2018</p>
+              <div class="stats summer">5 Classrooms | 4 Buildings</div>
+            </div>
+            <div class="rooms"></div>
+            <div class="category-heading date" style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img
+                src="images/Fall.svg" class="heading-image">
+              <p>Fall 2018</p>
+              <div class="stats fall">12 Classrooms | 4 Buildings</div>
+            </div>
+            <div class="rooms"></div>
+            <div class="category-heading date" style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img
+                src="images/Winter.svg" class="heading-image">
+              <p>Winter 2019</p>
+              <div class="stats winter">12 Classrooms | 3 Buildings</div>
+            </div>
+            <div class="rooms"></div>
+            <div class="category-heading date" style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img
+                src="images/Summer.svg" class="heading-image">
+              <p>Summer 2019</p>
+              <div class="stats summer">28 Classrooms | 7 Buildings</div>
+            </div>
+            <div class="rooms"></div>
+            <div class="category-heading date" style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img
+                src="images/Fall.svg" class="heading-image">
+              <p>Fall 2019</p>
+              <div class="stats fall">2 Classrooms | 1 Buildings</div>
+            </div>
+            <div class="rooms"></div>
+            <div class="category-heading date" style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img
+                src="images/Winter.svg" class="heading-image">
+              <p>Winter 2020</p>
+              <div class="stats winter">11 Classrooms | 2 Buildings</div>
+            </div>
+            <div class="rooms"></div>
+            <div class="category-heading date" style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img
+                src="images/Summer.svg" class="heading-image">
+              <p>Summer 2020</p>
+              <div class="stats summer">40 Classrooms | 10 Buildings</div>
+            </div>
+            <div class="rooms"></div>
+            <div class="category-heading date" style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img
+                src="images/Fall.svg" class="heading-image">
+              <p>Fall 2020</p>
+              <div class="stats fall">7 Classrooms | 1 Buildings</div>
+            </div>
+            <div class="rooms"></div>
+            <div class="category-heading date" style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img
+                src="images/Winter.svg" class="heading-image">
+              <p>Winter 2021</p>
+              <div class="stats winter">6 Classrooms | 1 Buildings</div>
+            </div>
+            <div class="rooms"></div>
+            <div class="category-heading date" style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img
+                src="images/Summer.svg" class="heading-image">
+              <p>Summer 2021</p>
+              <div class="stats summer">29 Classrooms | 10 Buildings</div>
+            </div>
+            <div class="rooms"></div>
+            <div class="category-heading date" style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img
+                src="images/Fall.svg" class="heading-image">
+              <p>Fall 2021</p>
+              <div class="stats fall">4 Classrooms | 2 Buildings</div>
+            </div>
+            <div class="rooms"></div>
+            <div class="category-heading date" style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img
+                src="images/Winter.svg" class="heading-image">
+              <p>Winter 2022</p>
+              <div class="stats winter">4 Classrooms | 1 Buildings</div>
+            </div>
+            <div class="rooms"></div>
+            <div class="category-heading date" style="opacity: 0; animation: move-in 0.4s ease-out forwards;"><img
+                src="images/Summer.svg" class="heading-image">
+              <p>Summer 2022</p>
+              <div class="stats summer">6 Classrooms | 5 Buildings</div>
+            </div>
+            <div class="rooms"></div>
+          </section>
+        </section>
+        <!-- <p>* Classroom count contains partially renovated rooms</p> -->
+      </div>
+    </div>
+  </div>
+  <!------------------------------------------------- footer ------------------------------------>
+  <footer id="footer">
+    <nav>
+      <ul id="footer_items">
+        <li>
+          <a href="../index.html">
+            <div style="display: flex; flex-direction: column">
+              <p style="margin: 0">LSM Website</p>
+              <p style="margin: 0">Learning Space Management</p>
+            </div>
+          </a>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script>
+    var $anchor = $("#scroll-anchor");
+    var $scroller = $('#search-box');
+    var $input = $('.search-input');
+    var navbarHeight = $('.navigation').outerHeight();
+
+    var move = function() {
+      var st = $(window).scrollTop();
+      var ot = $anchor.offset().top;
+      if (st > ot) {
+        $scroller.css({
+          position: "fixed",
+        });
+        if ($('.navigation').hasClass('nav-down')) {
+          $scroller.css({
+            top: navbarHeight + "px"
+          });
+        } else {
+          $scroller.css({
+            top: "0px"
+          });
+        }
+        $scroller.addClass('sticky');
+        $input.addClass('sticky');
+      } else {
+
+        $scroller.css({
+          position: "relative",
+          top: ""
+        });
+        $scroller.removeClass('sticky');
+        $input.removeClass('sticky');
+      }
+    };
+    $(window).scroll(move);
+    move();
+
+  </script>
+  <div class="close-viewer-message">
+    Press 'Esc' or click 'X' to close this viewer
+  </div>
+</body>
+
+</html>
