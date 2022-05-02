@@ -986,6 +986,7 @@ h3 {
   text-decoration: none;
   font-weight: 600;
   font-size: 28px;
+  padding-bottom: 50px;
 }
 
 .tiladvisory_about h3::after {
@@ -996,16 +997,6 @@ h3 {
   margin: auto;
   margin-top: 20px;
   background: #646464;
-}
-
-.tiladvisory_about p {
-  color: #646464;
-  text-decoration: none;
-  margin: 0px 100px;
-  padding-top: 40px;
-  padding-bottom: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 .til-story h3 {
