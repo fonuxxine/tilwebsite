@@ -8,6 +8,14 @@
   color: #012a5d;
   -webkit-text-decoration-color: #012a5d;
   text-decoration-color: #012a5d;
+  overflow-wrap: break-word;
+}
+.news-link2 {
+  text-decoration: underline;
+  color: #777;
+  -webkit-text-decoration-color: #777;
+  text-decoration-color: #777;
+  overflow-wrap: break-word;
 }
 .header {
   min-height: 100vh;
@@ -203,6 +211,7 @@ p {
 .row2 {
   display: flex;
   justify-content: space-evenly;
+  align-items: stretch;
 }
 
 .row3 {
@@ -386,6 +395,8 @@ h3 {
   overflow: hidden;
   padding: 40px;
   box-shadow: 5px 5px 20px rgba(92, 91, 91, 0.2);
+  flex-direction: column;
+  align-items: center;
 }
 .til-col img {
   width: 50%;
