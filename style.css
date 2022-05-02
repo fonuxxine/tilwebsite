@@ -218,6 +218,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   margin-right: 90px;
+  margin-left: 20px;
 }
 .row5 {
   display: flex;
@@ -403,6 +404,9 @@ h3 {
   height: 100px;
   border-radius: 10px;
   padding-bottom: 5%;
+}
+.til-col p{
+  height: 80px;
 }
 .about-col {
   flex-basis: 32%;
@@ -704,6 +708,9 @@ h3 {
   font-weight: 500;
   font-size: 15px;
 }
+.initiativespage-col p{
+  height: 300px;
+}
 .arrow img {
   width: 20%;
   height: 20%;
@@ -868,6 +875,21 @@ h3 {
 .text-news h3{
   text-align: left;
   color: #012a5d;
+}
+
+.text-news2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 430px;
+}
+
+.text-news2 h3 {
+  text-align: left;
+  color: #012a5d;
+}
+
+.text-news2 p {
+  text-align: left;
 }
 
 .reportpage {
