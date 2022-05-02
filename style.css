@@ -1103,7 +1103,18 @@ h3 {
 
 .timeline__middle {
   position: relative;
-  background: rgb(203, 203, 203);
+  border-right: 0.2rem dashed rgb(203, 203, 203);
+  display: inline-block;
+}
+
+.timeline__arrow img{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -4%;
+  left: 50%;
+  transform: translateX(-40%) rotate(180deg);
+  z-index: -1;
 }
 
 .timeline__point {
@@ -1222,8 +1233,8 @@ h3 {
    }
 
 
-   .final__tooltip.left:before {
-     top: 50%;
+  .final__tooltip.left:before {
+    top: 50%;
      right: calc(100% + 5px);
      transform: translateY(-50%);
    }
@@ -1246,5 +1257,5 @@ h3 {
      left: 100%;
      transform: translateY(-50%);
      border-left-width: 0;
-     border-right-color: rgba(0, 0, 0, 0.8);
-   }
+    border-right-color: rgba(0, 0, 0, 0.8);
+  }
