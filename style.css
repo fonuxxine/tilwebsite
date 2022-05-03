@@ -17,6 +17,9 @@
   text-decoration-color: #777;
   overflow-wrap: break-word;
 }
+.aboutpage a{
+  text-decoration: none;
+}
 .header {
   min-height: 100vh;
   width: 100%;
