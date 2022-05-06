@@ -17,9 +17,6 @@
   text-decoration-color: #777;
   overflow-wrap: break-word;
 }
-.aboutpage a{
-  text-decoration: none;
-}
 .header {
   min-height: 100vh;
   width: 100%;
@@ -415,8 +412,6 @@ h3 {
   height: 100px;
   border-radius: 10px;
   padding-bottom: 5%;
-}
-.til-col p{
 }
 .about-col {
   flex-basis: 32%;
@@ -1056,6 +1051,12 @@ h3 {
 .advisory b{
   color: rgb(53, 52, 52);
   font-size: 14px;
+}
+.advisory_link a{
+  text-decoration: underline;
+  color: #012a5d;
+  -webkit-text-decoration-color: #012a5d;
+  text-decoration-color: #012a5d;
 }
 .membership{
   padding-top: 30px;

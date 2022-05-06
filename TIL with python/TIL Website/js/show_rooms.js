@@ -482,14 +482,14 @@ Rooms.prototype.showRoomsBy = function(type) { // type is either 'date' or 'buil
   if (type == 'date') {
     // sort by year first and then by season
     categories.sort(function(a, b) {
-      var yearA = a == 'Pilot' ? 0 : parseInt(a.slice(-4));
-      var yearB = b == 'Pilot' ? 0 : parseInt(b.slice(-4));
+      var yearA = a == 'Pilot' ? 3000 : parseInt(a.slice(-4));
+      var yearB = b == 'Pilot' ? 3000 : parseInt(b.slice(-4));
       var season1ForA = parseInt(a.charAt(0));
       var season2ForA = parseInt(a.charAt(2));
       var season1ForB = parseInt(b.charAt(0));
       var season2ForB = parseInt(b.charAt(2));
 
-      return (yearA - yearB) != 0 ? (yearA - yearB) : (season1ForA - season1ForB) != 0 ? (season1ForA - season1ForB) : (season2ForA - season2ForB);
+      return (yearA - yearB) != 0 ? ((yearA - yearB) == 0 ? (yearA - yearB) : (yearA - yearB) < 0 ? 1 : -1) : (season1ForA - season1ForB) != 0 ? ((season1ForA - season1ForB) == 0 ? (season1ForA - season1ForB) : (season1ForA - season1ForB) < 0 ? 1 : -1) : ((season2ForA - season2ForB) == 0 ? (season2ForA - season2ForB) : (season2ForA - season2ForB) < 0 ? 1 : -1);
     });
   } else if (type == 'building') {
     // sort alphabetically

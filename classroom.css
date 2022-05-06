@@ -2119,7 +2119,6 @@ html {
     height: 400px;
     animation: slideshow-landing-page 55s linear infinite;
     animation-delay: 1s;
-    background-blend-mode: ;
     transform: translate3d(0, 0, 0);
 }
 
@@ -3050,7 +3049,7 @@ button img,
     color: #333;
     border-radius: 50px;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
-}]
+}
 
 .heading-image {
     width: 25px;
