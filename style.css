@@ -153,8 +153,8 @@ nav {
   right: 70%;
 }
 .hero-btn:hover {
-  border: 1px solid #f44336;
-  background: #f44336;
+  border: 1px solid #012a5d;
+  background: #012a5d;
   transition: 1s;
 }
 nav .fa {
@@ -163,6 +163,20 @@ nav .fa {
 
 /*this is for smaller screen size*/
 @media (max-width: 700px) {
+  .header {
+      min-height: 50vh;
+  }
+  .setup{
+    display: block;
+  }
+  .text-box {
+      display: block;
+      width: 100%;
+  }
+  .setup img {
+      width: 300px;
+      margin-bottom: -60px;
+    }
   .text-box h1 {
     font-size: 20px;
   }
@@ -171,7 +185,7 @@ nav .fa {
   }
   .nav-links {
     position: absolute;
-    background: #f44336;
+    background: #012a5d;
     height: 100vh;
     width: 200px;
     top: 0;
@@ -188,6 +202,27 @@ nav .fa {
   }
   .nav-links ul {
     padding: 30px;
+  }
+  .front-col2{
+    display: block;
+  }
+  .row6{
+    flex-direction: column;
+  }
+  .row2{
+    flex-direction: column;
+  }
+  .row5{
+    display: block;
+  }
+  .row5 img{
+    display: none;
+  }
+  .report-col{
+    padding: 20px 10px;
+  }
+  .resize-image img{
+    height: 10%;
   }
 }
 
@@ -236,6 +271,7 @@ p {
   justify-content: space-evenly;
   margin-right: 40px;
   margin-left: 40px;
+  margin-bottom: auto;
   padding-bottom: 200px;
 }
 .front-col {
@@ -273,18 +309,6 @@ p {
   box-shadow: 5px 5px 20px rgba(92, 91, 91, 0.2);
   cursor: pointer;
   display: relative;
-}
-
-.design-col {
-  flex-basis: 40%;
-  margin: 5px;
-  background: transparent;
-  padding: 5px;
-}
-
-.design-col img {
-  height: 140px;
-  object-fit: contain;
 }
 
 .what-why img{
@@ -920,7 +944,7 @@ h3 {
 }
 .title-text{
   color: #012a5d;
-  margin: 10px 40px;
+  margin: 10px 0px;
 }
 .report-col img {
   width: 50%;
@@ -1231,10 +1255,10 @@ h3 {
     background-color: #ecf0f1;
     content: attr(title);
   }
-   .final__tooltip:hover:before,
-   .final__tooltip:hover:after {
-     display: inline-block;
-   }
+  .final__tooltip:hover:before,
+  .final__tooltip:hover:after {
+    display: inline-block;
+  }
 
 
    .final__tooltip.top:before {
