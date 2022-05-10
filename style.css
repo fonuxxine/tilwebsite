@@ -118,7 +118,7 @@ nav {
   align-items: center;
 }
 .setup img {
-  width: 700px;
+  width: 55%;
   padding: 0px;
   margin-bottom: -180px;
 }
@@ -158,7 +158,7 @@ nav {
   transition: 1s;
 }
 nav .fa {
-  display: none;
+  color: #fff;
 }
 
 /*this is for smaller screen size*/
@@ -199,6 +199,7 @@ nav .fa {
     color: #fff;
     margin: 10px;
     font-size: 22px;
+    cursor: pointer;
   }
   .nav-links ul {
     padding: 30px;
@@ -220,9 +221,6 @@ nav .fa {
   }
   .report-col{
     padding: 20px 10px;
-  }
-  .resize-image img{
-    height: 10%;
   }
 }
 
