@@ -159,69 +159,7 @@ nav {
 }
 nav .fa {
   color: #fff;
-}
-
-/*this is for smaller screen size*/
-@media (max-width: 700px) {
-  .header {
-      min-height: 50vh;
-  }
-  .setup{
-    display: block;
-  }
-  .text-box {
-      display: block;
-      width: 100%;
-  }
-  .setup img {
-      width: 300px;
-      margin-bottom: -60px;
-    }
-  .text-box h1 {
-    font-size: 20px;
-  }
-  .nav-links ul li {
-    display: block;
-  }
-  .nav-links {
-    position: absolute;
-    background: #012a5d;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
-  }
-  nav.fa {
-    display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  .nav-links ul {
-    padding: 30px;
-  }
-  .front-col2{
-    display: block;
-  }
-  .row6{
-    flex-direction: column;
-  }
-  .row2{
-    flex-direction: column;
-  }
-  .row5{
-    display: block;
-  }
-  .row5 img{
-    display: none;
-  }
-  .report-col{
-    padding: 20px 10px;
-  }
+  display: none;
 }
 
 /*institutes*/
@@ -1285,14 +1223,14 @@ h3 {
      left: 50%;
      transform: translateX(-50%);
      border-top-width: 0;
-     border-bottom-color: rgba(0, 0, 0, 0.8);
+    border-bottom-color: rgba(0, 0, 0, 0.8);
    }
 
 
   .final__tooltip.left:before {
     top: 50%;
-     right: calc(100% + 5px);
-     transform: translateY(-50%);
+    right: calc(100% + 5px);
+    transform: translateY(-50%);
    }
    .final__tooltip.left:after {
      top: 50%;
@@ -1385,4 +1323,83 @@ h3 {
 .textarea-field{
   height: 150px;
   padding: 10px;
+}
+
+/*this is for smaller screen size*/
+@media (max-width: 700px) {
+  .header {
+    min-height: 50vh;
+  }
+
+  .setup {
+    display: block;
+  }
+
+  .text-box {
+    display: block;
+    width: 100%;
+  }
+
+  .setup img {
+    width: 300px;
+    margin-bottom: -60px;
+  }
+
+  .text-box h1 {
+    font-size: 20px;
+  }
+
+  .front-col2 {
+    display: block;
+  }
+
+  .row6 {
+    flex-direction: column;
+  }
+
+  .row2 {
+    flex-direction: column;
+  }
+
+  .row5 {
+    display: block;
+  }
+
+  .row5 img {
+    display: none;
+  }
+
+  .report-col {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 700px) {
+.nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: #012a5d;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav.fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
 }
