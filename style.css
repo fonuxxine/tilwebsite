@@ -1271,6 +1271,15 @@ h3 {
     border-right-color: rgba(0, 0, 0, 0.8);
   }
 
+  @media (max-width: 700px) {
+    .final__tooltip {
+        margin-bottom: 190px;
+      }
+    .row6{
+      padding-bottom: 0px;
+    }
+  }
+
   .row2 {
     display: flex;
     justify-content: space-evenly;
