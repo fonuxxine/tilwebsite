@@ -479,26 +479,6 @@ h3 {
 }
 
 /* footer */
-.cta1 {
-  width: 100%;
-  background-image: linear-gradient(#012a5d, #012a5d);
-  text-align: left;
-  padding: 50px 0px;
-}
-.cta1 p {
-  color: #fff;
-  padding: 0;
-}
-
-.cta1 a {
-  color: #fff;
-}
-
-.cta1 img {
-  width: 50px;
-  height: 50%;
-  padding-left: 30%;
-}
 .cta {
   margin-top: 100px;
   width: 100%;
@@ -523,6 +503,11 @@ h3 {
   width: 50px;
   height: 50%;
   padding-left: 30%;
+}
+@media (max-width: 700px) {
+  .cta img{
+    padding-left: 2%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -671,15 +656,15 @@ h3 {
   margin-right: 30px;
   position: relative;
   overflow: hidden;
-  padding: 30px 50px;
+  padding: 30px 30px;
   box-shadow: 5px 5px 20px rgba(92, 91, 91, 0.2);
 }
 .initiativespage-col img {
   height: 170px;
   width: 170px;
-  margin-bottom: 10px;
 }
 .initiativespage-col h3 {
+  padding-top: 3%;
   color: #012a5d;
   text-decoration: none;
   font-weight: 500;
