@@ -113,12 +113,18 @@ nav img {
   transition: 0.5s;
 }
 .nav-links ul li:hover::after {
-  width: 100%;
+  width: 0%;
 }
 .header #navLinks .fa {
   display: none;
 }
 .header .fa{
+  display: none;
+}
+.header2 #navLinks .fa {
+  display: none;
+}
+.header2 .fa {
   display: none;
 }
 
@@ -1403,10 +1409,10 @@ nav .fa{
 
   .header #navLinks .fa {
     display: block;
-      color: #fff;
-      margin: 10px;
-      font-size: 22px;
-      cursor: pointer;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
   }
 
   .header .fa {
@@ -1415,6 +1421,34 @@ nav .fa{
       margin: 10px;
       font-size: 22px;
       cursor: pointer;
+  }
+
+  .header2  .nav-links {
+      position: absolute;
+      background: #012a5d;
+      height: 70vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+    }
+
+  .header2 #navLinks .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .header2 .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
   }
 
   .nav-links ul {
