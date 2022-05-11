@@ -1398,6 +1398,10 @@ h3 {
   .report-col {
     padding: 20px 10px;
   }
+
+  .text-news2 {
+    width: fit-content;
+  }
 }
 
 @media (max-width: 700px) {
