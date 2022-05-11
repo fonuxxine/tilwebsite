@@ -41,86 +41,86 @@
                 <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
         </section>
-    </body>
 
-    <section class="contactpage">
-        <div class="classroom">
-            <h3>Contact Us</h3>
-            <p>Looking to get in touch with TIL? We'd love to hear from you!</p>
-        </div>
-    </section>
+        <section class="contactpage">
+            <div class="classroom">
+                <h3>Contact Us</h3>
+                <p>Looking to get in touch with TIL? We'd love to hear from you!</p>
+            </div>
+        </section>
+        
+        <section class="contact-info">
+            <div class="contact-col">
+                <form action="" method="post">
+                    <input type="text" class="input-field" placeholder="Your Name" required>
+                    <input type="email" class="input-field" placeholder="Your Email" required>
+                    <input type="text" class="input-field" placeholder="Your Subject" required>
+                    <input type="text" class="input-field textarea-field" placeholder="Your Message" required>
+                    <a href="" class="button" id="btn">
+                        <h3>Send Message</h3>
+                    </a>
+                </form>
+            </div>
+        
+            <script src="https://smtpjs.com/v3/smtp.js">
+            </script>
+        
+            <script>
+                var btn = document.getElementById('btn');
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault()
+                    var name = document.getElementById('name').value;
+                    var email = document.getElementById('email').value;
+                    var subject = document.getElementById('subject').value;
+                    var message = document.getElementById('message').value;
+                    var body = 'name: ' + name + '<br/> email: ' + email + '<br/> subject: ' + subject + '<br/> message: ' + message
 
-    <section class="contact-info">
-        <div class="contact-col">
-            <form action="" method="post">
-                <input type="text" class="input-field" placeholder="Your Name" required>
-                <input type="email" class="input-field" placeholder="Your Email" required>
-                <input type="text" class="input-field" placeholder="Your Subject" required>
-                <input type="text" class="input-field textarea-field" placeholder="Your Message" required>
-                <a href="" class="button" id="btn">
-                    <h3>Send Message</h3>
+
+                    Email.send({
+                        Host: "smtp.utoronto.ca",
+                        Username: "lsm.classroom@utoronto.ca",
+                        Password: "password",
+                        To: 'lsm.classroom@utoronto.ca',
+                        From: email,
+                        Subject: subject,
+                        Body: body
+                    }).then(
+                        message => alert("Message Sent Successfully")
+                    );
+                })
+            </script>
+        </section>
+        
+        <!--Footer-->
+        <section class="cta">
+            <img src="images/Icons/question.png">
+            <div class="contact">
+                <p>Looking to get in touch with TIL? We’d love to hear from you!</p>
+                <a href="">CONTACT US ></a>
+            </div>
+        </section>
+        
+        <!--Institutes-->
+        <section class="institutes">
+            <div class="row resize-image">
+                <a href="https://www.utoronto.ca" target="blank">
+                    <img src="images/Home/Vector.svg" alt="">
                 </a>
-            </form>
-        </div>
-
-        <script src="https://smtpjs.com/v3/smtp.js">
-        </script>
-
+                <a href="https://lsm.utoronto.ca/index.html" target="blank">
+                    <img src="images/Home/LSM_Logo2021.svg" alt="">
+                </a>
+                <a href="https://blogs.studentlife.utoronto.ca/innovationhub/" target="blank">
+                    <img src="images/Home/Innovation Hub - Icon with Text.svg" alt="">
+                </a>
+            </div>
+        </section>
+        
+        <!--JavaScript for Toggle Menu-->
         <script>
-            var btn = document.getElementById('btn');
-            btn.addEventListener('click', function(e) {
-                e.preventDefault()
-                var name = document.getElementById('name').value;
-                var email = document.getElementById('email').value;
-                var subject = document.getElementById('subject').value;
-                var message = document.getElementById('message').value;
-                var body = 'name: ' +name + '<br/> email: ' + email + '<br/> subject: ' + subject + '<br/> message: ' + message
-
-
-                Email.send({
-                    Host: "smtp.utoronto.ca",
-                    Username: "lsm.classroom@utoronto.ca",
-                    Password: "password",
-                    To: 'lsm.classroom@utoronto.ca',
-                    From: email,
-                    Subject: subject,
-                    Body: body
-                }).then(
-                    message => alert("Message Sent Successfully")
-                );
-            })
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() { navLinks.style.right = "0"; }
+            function hideMenu() { navLinks.style.right = "-200px"; }
         </script>
-    </section>
-
-    <!--Footer-->
-    <section class="cta">
-        <img src="images/Icons/question.png">
-        <div class="contact">
-            <p>Looking to get in touch with TIL? We’d love to hear from you!</p>
-            <a href="">CONTACT US ></a>
-        </div>
-    </section>
-    
-    <!--Institutes-->
-    <section class="institutes">
-        <div class="row resize-image">
-            <a href="https://www.utoronto.ca" target="blank">
-                <img src="images/Home/Vector.svg" alt="">
-            </a>
-            <a href="https://lsm.utoronto.ca/index.html" target="blank">
-                <img src="images/Home/LSM_Logo2021.svg" alt="">
-            </a>
-            <a href="https://blogs.studentlife.utoronto.ca/innovationhub/" target="blank">
-                <img src="images/Home/Innovation Hub - Icon with Text.svg" alt="">
-            </a>
-        </div>
-    </section>
-
-    <!--JavaScript for Toggle Menu-->
-    <script>
-        var navLinks = document.getElementById("navLinks");
-        function showMenu() { navLinks.style.right = "0"; }
-        function hideMenu() { navLinks.style.right = "-200px"; }
-    </script>
+    </body>
     
 </html>

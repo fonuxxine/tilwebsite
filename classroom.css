@@ -2867,7 +2867,7 @@ nav {
     display: none;
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
     .nav-links ul li {
         display: block;
     }
@@ -2931,7 +2931,7 @@ nav {
     .nav-links ul {
         padding: 30px;
     }
-}
+} */
 
 .setup {
     display: flex;
