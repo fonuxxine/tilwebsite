@@ -35,6 +35,9 @@
   position: relative;
   cursor: pointer;
 }
+.button-header :hover ::after{
+  text-decoration: none
+}
 .button-font {
   color: #012a5d;
   font-weight: 500;
@@ -112,7 +115,7 @@ nav img {
 .nav-links ul li:hover::after {
   width: 100%;
 }
-.header .nav-links .fa {
+.header #navLinks .fa {
   display: none;
 }
 .header .fa{
@@ -1382,11 +1385,11 @@ nav .fa{
   display: none;
 }
 @media (max-width: 700px) {
-  .header nav-links ul li {
+  .nav-links ul li {
     display: block;
   }
 
-  .header nav-links {
+  .nav-links {
     position: absolute;
     background: #012a5d;
     height: 100%;
@@ -1398,12 +1401,20 @@ nav .fa{
     transition: 1s;
   }
 
-  .header .nav-links .fa {
+  .header #navLinks .fa {
     display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+  }
+
+  .header .fa {
+    display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
   }
 
   .nav-links ul {
