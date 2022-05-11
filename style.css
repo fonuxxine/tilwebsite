@@ -82,7 +82,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.nav img {
+nav img {
   width: 150px;
 }
 .nav-links {
@@ -102,14 +102,23 @@ nav {
 }
 .nav-links ul li::after {
   content: "";
-  width: 100%;
+  width: 0%;
   height: 2px;
+  background: #fff;
   display: block;
   margin: auto;
+  transition: 0.5s;
 }
 .nav-links ul li:hover::after {
   width: 100%;
 }
+.header .nav-links .fa {
+  display: none;
+}
+.header .fa{
+  display: none;
+}
+
 .setup {
   display: flex;
   padding: 2% 6%;
@@ -156,10 +165,6 @@ nav {
   border: 1px solid #012a5d;
   background: #012a5d;
   transition: 1s;
-}
-nav .fa {
-  color: #fff;
-  display: none;
 }
 
 /*institutes*/
@@ -1373,16 +1378,18 @@ h3 {
     padding: 20px 10px;
   }
 }
-
+nav .fa{
+  display: none;
+}
 @media (max-width: 700px) {
-.nav-links ul li {
+  .header nav-links ul li {
     display: block;
   }
 
-  .nav-links {
+  .header nav-links {
     position: absolute;
     background: #012a5d;
-    height: 100vh;
+    height: 100%;
     width: 200px;
     top: 0;
     right: -200px;
@@ -1391,7 +1398,7 @@ h3 {
     transition: 1s;
   }
 
-  nav.fa {
+  .header .nav-links .fa {
     display: block;
     color: #fff;
     margin: 10px;
