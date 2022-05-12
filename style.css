@@ -282,10 +282,16 @@ p {
   margin-bottom: 5%;
 }
 
-.what-text2 {
-  text-align: left;
-  margin-top: 5%;
-  margin-bottom: 5%;
+@media (max-width: 700px) {
+  .front-col {
+      padding: 0;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+  
+  .front-col3 {
+      padding-bottom: 20px;
+    }
 }
 
 .course img {
