@@ -518,9 +518,6 @@ h3 {
   .cta img{
     padding-left: 2%;
   }
-}
-
-@media (max-width: 700px) {
   .cta h1 {
     font-size: 24px;
   }
@@ -663,7 +660,6 @@ h3 {
   border: 7px solid #c9c9c9;
   border-radius: 30px;
   margin-bottom: 100px;
-  
   position: relative;
   overflow: hidden;
   padding: 30px 30px;
