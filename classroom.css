@@ -2852,7 +2852,7 @@ nav {
     margin: auto;
 }
 
-.nav-links ul li:hover::after {
+.nav-links ul li.visit-underline:hover::after {
     width: 100%;
 }
 
