@@ -2728,6 +2728,11 @@ form input[type=submit]:disabled {
     font-family: "Poppins", sans-serif;
 }
 
+#underline {
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+}
+
 .news-link {
     text-decoration: underline;
     color: #012a5d;
