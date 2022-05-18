@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <!--this is to make the website responsive-->
+    <title>Transforming the Instructional Language</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="TIL with python/TIL Website/css/LSRS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="TIL with python/TIL Website/js/navbar.js"></script>
+</head>
+
+<body>
+    <section class="header2">
+        <nav>
+            <div class=col>
+                <div class="logo">
+                    <a href="index.html"><img
+                            src="images/Logos/University of Toronto Logos/U of T Signature_Reverse RGB (1).png"></a>
+                </div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li class="visit-underline"><a href="index.html">Home</a></li>
+                    <li class="visit-underline"><a href="about.html">TIL Story</a></li>
+                    <li id="underline" class="visit-underline"><a href="initiatives.html">Projects</a></li>
+                    <li class="visit-underline"><a href="TIL with python/TIL Website/classroom.html">Classroom
+                            Redesign</a></li>
+                    <li class="visit-underline"><a href="news.html">News and Reports</a></li>
+                    <li class="visit-underline"><a href="til-advisory.html">TIL Advisory</a></li>
+                    <li><a href="contact.html" class="button-header">
+                            <div class="button-font">
+                                Contact Us
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+
+
+    <!--About-->
+    <section class="aboutpage2">
+        <div class="initiatives_about">
+            <h3>Learning Space Rating System</h3>
+        </div>
+    </section>
+
+    <div id="container">
+        <main class="tableau-container">
+            <div class='tableauPlaceholder' id='viz1565196262688' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Final '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ls&#47;lsrs3_Final&#47;Final&#47;1_rss.png'
+                            style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='path'
+                        value='views&#47;lsrs3_Final&#47;Final?:embed=y&amp;:display_count=y&amp;publish=yes' />
+                    <param name='toolbar' value='no' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ls&#47;lsrs3_Final&#47;Final&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='filter' value='publish=yes' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1565196262688');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if (divElement.offsetWidth > 800) {
+                    vizElement.style.width = '1280px'; vizElement.style.height = '800px';
+                } else if (divElement.offsetWidth > 500) {
+                    vizElement.style.width = '1280px'; vizElement.style.height = '800px';
+                } else {
+                    vizElement.style.width = '100%'; vizElement.style.height = '1100px';
+                }
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+        </main>
+    </div>
+
+    <!--Footer-->
+    <section class="cta">
+        <img src="images/Icons/question.png">
+        <div class="contact">
+            <p>Looking to get in touch with TIL? We&#8217;d love to hear from you!</p>
+            <a href="">CONTACT US ></a>
+        </div>
+    </section>
+
+    <!--Institutes-->
+    <section class="institutes">
+        <div class="row resize-image">
+            <a href="https://www.utoronto.ca" target="blank">
+                <img src="images/Home/Vector.svg" alt="">
+            </a>
+            <a href="https://lsm.utoronto.ca/index.html" target="blank">
+                <img src="images/Home/LSM_Logo2021.svg" alt="">
+            </a>
+            <a href="https://blogs.studentlife.utoronto.ca/innovationhub/" target="blank">
+                <img src="images/Home/Innovation Hub - Icon with Text.svg" alt="">
+            </a>
+        </div>
+    </section>
+</body>
+<!--JavaScript for Toggle Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() { navLinks.style.right = "0"; }
+    function hideMenu() { navLinks.style.right = "-200px"; }
+</script>
+
+</html>

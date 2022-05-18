@@ -570,6 +570,12 @@ h3 {
   text-align: center;
   padding-top: 50px;
 }
+.aboutpage2 {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
 .aboutpage-col {
   flex-basis: 32%;
   border: 7px solid #c9c9c9;
