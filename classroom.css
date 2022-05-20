@@ -355,7 +355,7 @@ html {
     margin: 0 auto;
 }
 
-.navigation nav {
+/* .navigation nav {
     float: right;
 }
 
@@ -368,9 +368,9 @@ html {
 .navigation nav ul li {
     float: left;
     position: relative;
-}
+} */
 
-.navigation nav ul li a {
+/* .navigation nav ul li a {
     display: block;
     padding: 0 20px;
     line-height: 70px;
@@ -390,9 +390,9 @@ html {
 
 .navigation nav ul li ul li {
     min-width: 255px;
-}
+} */
 
-@media (max-width: 1400px) {
+/* @media (max-width: 1400px) {
     .navigation {
         font-size: 13px;
     }
@@ -411,8 +411,8 @@ html {
 
 .navigation nav ul li ul li a:hover {
     background: #bccbde;
-    color: #002A5C;
-}
+    color: #002A5C; */
+/* }
 
 .navigation nav ul li a:hover svg g {
     fill: #bccbde;
@@ -423,9 +423,9 @@ html {
     display: none;
     z-index: 1;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-}
+} */
 
-.navigation nav ul li:last-child .nav-dropdown {
+/* .navigation nav ul li:last-child .nav-dropdown {
     right: 0px;
 }
 
@@ -445,9 +445,9 @@ html {
 
 .nav-mobile:hover {
     background: #bccbde;
-}
+} */
 
-.nav-mobile:hover #nav-toggle span:before,
+/* .nav-mobile:hover #nav-toggle span:before,
 .nav-mobile:hover #nav-toggle span:after {
     width: 35px;
 }
@@ -510,7 +510,7 @@ html {
         display: block;
     }
 
-    .navigation nav ul li a.active {
+    /* .navigation nav ul li a.active {
         pointer-events: none;
         background: #bccbde;
         color: #002A5C !important;
@@ -518,10 +518,10 @@ html {
 
     .navigation nav ul li a.active svg g {
         fill: #002A5C !important;
-    }
-}
+    } 
+} */
 
-.dropdown-li:hover .nav-dropdown {
+/* .dropdown-li:hover .nav-dropdown {
     display: block;
 }
 
@@ -587,8 +587,8 @@ html {
     padding-right: 15px;
 }
 
-.navigation #image img {
-    padding-left: 10px;
+.navigation #image img { */
+    /* padding-left: 10px;
 }
 
 .navigation #image a {
@@ -610,9 +610,9 @@ html {
     #til_logo {
         height: 20px;
     }
-}
+} */
 
-.navigation nav ul li a.active {
+/* .navigation nav ul li a.active {
     pointer-events: none;
     border-bottom: 5px solid #bccbde;
     color: #bccbde;
@@ -620,9 +620,9 @@ html {
 
 .navigation nav ul li a.active svg g {
     fill: #bccbde;
-}
+} */
 
-.navigation nav ul li a svg {
+/* .navigation nav ul li a svg {
     padding-right: 10px;
     margin-top: -4px;
     vertical-align: middle;
@@ -638,7 +638,7 @@ html {
 
 .nav-up {
     top: -95px;
-}
+} */
 
 /* ---------------------------- IMAGE ----------------------------*/
 .background-container {
@@ -2846,10 +2846,12 @@ nav {
 
 .nav-links ul li::after {
     content: "";
-    width: 100%;
+    width: 0%;
     height: 2px;
+    background: #fff;
     display: block;
     margin: auto;
+    transition: 0.5s;
 }
 
 .nav-links ul li.visit-underline:hover::after {
