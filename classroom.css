@@ -2769,6 +2769,14 @@ form input[type=submit]:disabled {
     cursor: pointer;
 }
 
+.button-header:hover {
+    background: #5b738f;
+    transition: 1s;
+}
+
+.button-header :hover ::after {
+    text-decoration: none
+}
 .button-font {
     color: #012a5d;
     font-weight: 500;

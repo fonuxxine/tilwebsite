@@ -41,7 +41,6 @@
 }
 .button-header:hover {
   background: #5b738f;
-  transition: 1s;
 }
 .button-header :hover ::after{
   text-decoration: none
@@ -51,7 +50,6 @@
   font-weight: 500;
 }
 .logo img {
-  height: 70px;
   object-fit: contain;
   margin-left: 0;
 }
@@ -94,7 +92,7 @@ nav {
   align-items: center;
 }
 nav img {
-  width: 150px;
+  width: 190px;
 }
 .nav-links {
   flex: 1;
@@ -1025,6 +1023,18 @@ h3 {
   font-weight: 300;
   line-height: 22px;
   margin-left: 30px;
+}
+.advisory h4{
+  color: #012a5d;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.advisory h5{
+  color: #012a5d;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
 }
 .advisory ul {
   color: #777;
